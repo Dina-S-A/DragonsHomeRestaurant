@@ -5,7 +5,7 @@
     <%- include("./partials/nav.ejs") %>
 
     <!--Showcase or main header area-->
-    <section class="bg-dark text-light p-5 p-lg-0 pt-lg-2 text-center text-sm-start">
+    <section class="bg-dark text-light p-6 p-lg-0 pt-lg-2 text-center text-sm-start">
         <div class="container m-4">
             <div class="d-sm-flex align-items-center justify-content-between ">
                 <div>
@@ -17,12 +17,12 @@
                     </p>
                     <% if (!(student||member)){%>
                     <a href="/memberSignup" class="btn btn-warning mt-3">
-                        <i class="bi bi-chevron-right"></i> member sign up
+                        <i class="bi bi-chevron-right"></i> Member sign up
                     </a>
                 <%}%>
                     
                 </div>
-                <img class="img-fluid w-100 d-none d-sm-block m-4" src="img/dragonWall.jpg"  style="height:400px;" alt="">
+                <img class="img-fluid  d-none d-sm-block m-5 mr-6" src="img/dragonWall.jpg"  style="height:400px; width:500px;" alt="">
             </div>
         </div>
     </section>
@@ -133,7 +133,7 @@
                   </button>
                 </h2>
                 <div id="question-three" class="accordion-collapse collapse" data-bs-parent="#questions">
-                  <div class="accordion-body text-dark"">No we don't! you jast pay for what you order.</div>
+                  <div class="accordion-body text-dark"">No! you only pay for what is ordered.</div>
                 </div>
               </div>
           </div>
@@ -152,7 +152,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-five">
-                How can I know more about each menu item contents.
+                How can I know more about each menu item?
               </button>
             </h2>
             <div id="question-five" class="accordion-collapse collapse" data-bs-parent="#questions">
@@ -218,17 +218,11 @@
                         <span class="fw-bold">Location</span> Dragon, Utah
                     </li>
                     <li class="list-group-item">
-                        <span class="fw-bold">Teacher Phone</span> (555) 555-5555
+                        <span class="fw-bold">Restaurant Phone</span> (555) 555-5555
                     </li>
                     <li class="list-group-item">
-                        <span class="fw-bold">Student Phone</span> (333) 333-3333
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold">Teacher Email</span> teacher@dragons.edu
-                    </li>
-                    <li class="list-group-item">
-                        <span class="fw-bold">Student Email</span> student@dragons.edu
-                    </li>
+                        <span class="fw-bold">Restaurant Email</span> dragon@dragons.org
+                    </li>                   
                 </ul>
             </div>
             <div class="col-md">

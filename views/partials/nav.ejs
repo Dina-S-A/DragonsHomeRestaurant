@@ -16,7 +16,8 @@
                 <% if (member) { %>
                     <li class="nav-item nav-link">Welcome, <%= member.name %></li>
                    
-                    <li class="nav-item"><a href="/cart/menu" class="nav-link">Menu</a></li>                              
+                    <li class="nav-item"><a href="/cart/menu" class="nav-link">Menu</a></li> 
+                    <li class="nav-item"><a href="#" class="nav-link">Reservation</a></li> 
                     <li class="nav-item"><a href="/logout" class="nav-link">Log out</a></li>
                     
 
@@ -26,16 +27,16 @@
                     <li class="nav-item"><a href="/courses/add" class="nav-link">Add Items to Menu</a></li>
                     <!--<li class="nav-item"><a href="/students/showSchedule/<%= student._id %>" class="nav-link">Your Schedule</a></li>--> 
                     <li class="nav-item"><a href="/students/studentSearchCourses" class="nav-link">Search Menu Items</a></li> 
-                    <li class="nav-item"><a href="#" class="nav-link">Reservation</a></li> 
+                    
                     <li class="nav-item"><a href="/studentSignup" class="nav-link">Add Admins</a></li>   
-                    <li class="nav-item"><a href="/logout" class="nav-link">Log out</a></li>
+                    <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
                
                 <% } else  { %>
                
                     <li class="nav-item"><a href="/cart/menu" class="nav-link">Menu</a></li> 
                     <li class="nav-item"><a href="/memberSignup" class="nav-link">User Sign up</a></li>
-                    <li class="nav-item"><a href="/memberLogin" class="nav-link">User Log in</a></li> 
-                    <li class="nav-item"><a href="/studentLogin" class="nav-link">Admin Log in</a></li>                   
+                    <li class="nav-item"><a href="/memberLogin" class="nav-link">User Login</a></li> 
+                    <li class="nav-item"><a href="/studentLogin" class="nav-link">Admin Login</a></li>                   
                 <% } %>
          
             </ul>
