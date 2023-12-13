@@ -12,32 +12,32 @@
             <div class="d-sm-flex align-items-center justify-content-between">
                 <div>
                     <h1><span class="text-warning">
-                        Add Courses Below!!
+                        Add Menu Item Below!!
                     </span></h1>
                     
                     
 <!--Form to add courses-->
                     <div class="modal-body">
-                        <p class="lead">Fill out this form to add a course</p>
+                        <p class="lead">Fill out this form to add a new menu item</p>
 
                         <section>
                             <div class = "create-course content">
                               <form action="/courses/add" method="post">
-                                  <label for = "name">Course Name:</label>
+                                  <label for = "name">Item Name:</label>
                                   <input type = "text" id = "name" name = "name" required>
-                                  <label for = "desc">Course Description:</label>                                  
+                                  <label for = "desc">Item Description:</label>                                  
                                   <!--<input type = "text" id = "desc" name = "desc" required>-->
                                   <textarea class="form-control" id="desc" name = "desc" required rows="3"></textarea>
-                                  <label for = "subArea">Subject Area:</label>
+                                  <label for = "subArea">Image:</label>
                                   <input type = "text" id = "subArea" name = "subArea" required>
-                                  <label for = "numcred">Number of Credits</label>
+                                  <label for = "numcred">Price:</label>
                                   <input type = "text" id = "numcred" name = "numcred" required>
                                   <!--hidden input to have the student id who created the course-->
                                   <input type = "text" id = "createdBy" name = "createdBy" style="display:none;" value="<%= student._id%>"> 
                                   
                                  
-                                    <button class="btn btn-success btn-lg bi bi-chevron-right">Add Course</button>
-                                    <button class="btn btn-success btn-lg bi bi-chevron-right" onclick="window.location.href = '/cart/menu';">Check All Courses</button>
+                                    <button class="btn btn-success btn-lg bi bi-chevron-right">Add Menu Item</button>
+                                    <button class="btn btn-success btn-lg bi bi-chevron-right" onclick="window.location.href = '/cart/menu';">Check Menu</button>
 
                                     
                                     

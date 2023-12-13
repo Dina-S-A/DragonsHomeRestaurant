@@ -5,10 +5,8 @@ hidden = [".config", "package-lock.json"]
 [nix]
 channel = "stable-23_05"
 
-[unitTest]
-language = "nodejs"
-
 [deployment]
-run = ["node", "app.js"]
+run = ["node","app.js"]
 deploymentTarget = "cloudrun"
 ignorePorts = false
+
